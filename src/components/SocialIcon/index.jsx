@@ -14,28 +14,28 @@ import {
 function SocialIcon() {
   return (
     <div className="social-icon">
-      <a href="/">
+      <a href="/www.facebook.com" target="_blank" title="facebook">
         <FontAwesomeIcon className="icon" icon={faFacebook} />
       </a>
-      <a href="/">
+      <a href="/www.twitter.com" target="_blank" title="twitter">
         <FontAwesomeIcon className="icon" icon={faTwitter} />
       </a>
-      <a href="/">
+      <a href="/www.linkedin.com" target="_blank" title="linkedin">
         <FontAwesomeIcon className="icon" icon={faLinkedin} />
       </a>
-      <a href="/">
+      <a href="/www.google.com" target="_blank" title="google">
         <FontAwesomeIcon className="icon" icon={faGooglePlus} />
       </a>
-      <a href="/">
+      <a href="/www.youtube.com" target="_blank" title="youtube">
         <FontAwesomeIcon className="icon" icon={faYoutube} />
       </a>
-      <a href="/">
+      <a href="/www.bed.com" target="_blank" title="bed">
         <FontAwesomeIcon className="icon" icon={faBed} />
       </a>
-      <a href="/">
+      <a href="/www.calender.com" target="_blank" title="calender">
         <FontAwesomeIcon className="icon" icon={faCalendar} />
       </a>
-      <a href="/">
+      <a href="/www.dandd.com" target="_blank" title="dandd">
         <FontAwesomeIcon className="icon" icon={faDAndD} />
       </a>
     </div>
