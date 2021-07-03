@@ -1,0 +1,34 @@
+.carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.banner_center h1 {
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 2.4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0 0;
+  margin: 0 0;
+}
+.banner_center h2 {
+  color: #eee;
+  font-family: "Arvo", serif;
+  text-transform: uppercase;
+  font-size: 2.4em;
+  padding: 7px 0;
+}
+.banner_center h2 span {
+  color: #ef664d;
+  font-weight: 900;
+}

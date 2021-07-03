@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "GRAPHIC DESIGN",
+    "percentage": "75%"
+  },
+  {
+    "id": 2,
+    "title": "WEB DESIGN",
+    "percentage": "75%"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX",
+    "percentage": "75%"
+  },
+  {
+    "id": 4,
+    "title": "BRANDING",
+    "percentage": "75%"
+  },
+  {
+    "id": 5,
+    "title": "LOGODESIGN",
+    "percentage": "75%"
+  },
+  {
+    "id": 6,
+    "title": "PHOTOGRAPHY",
+    "percentage": "75%"
+  },
+  {
+    "id": 7,
+    "title": "HTML/CSS",
+    "percentage": "75%"
+  },
+  {
+    "id": 8,
+    "title": "JQUERY",
+    "percentage": "75%"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "photography",
+    "photo": "https://i.ibb.co/9hPDgz3/pic-8.jpg"
+  },
+  {
+    "id": 2,
+    "name": "photography",
+    "photo": "https://i.ibb.co/5kpBtHP/pic-7.jpg"
+  },
+  {
+    "id": 3,
+    "name": "web design",
+    "photo": "https://i.ibb.co/TLMChJ3/pic-6.jpg"
+  },
+  {
+    "id": 4,
+    "name": "web design",
+    "photo": "https://i.ibb.co/h8th3Gp/pic-5.jpg"
+  },
+  { "id": 5, "name": "print", "photo": "https://i.ibb.co/3TB5xGF/pic-4.jpg" },
+  { "id": 6, "name": "print", "photo": "https://i.ibb.co/fpTW1gx/pic-3.jpg" },
+  {
+    "id": 7,
+    "name": "branding",
+    "photo": "https://i.ibb.co/7C2FVkj/pic-1.jpg"
+  },
+  { "id": 8, "name": "branding", "photo": "https://i.ibb.co/J7w45Pq/pic-2.jpg" }
+]

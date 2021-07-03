@@ -1,0 +1,36 @@
+.full-nav-area {
+}
+.navbar {
+  background: transparent;
+}
+.nav-full-area {
+}
+.nav-full-area button {
+  border: 1px solid white;
+}
+.nav-bar-icon {
+  color: white;
+}
+.nav-full-area a {
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navigation-area {
+}
+.navigation-area ul {
+  padding: 20px 0px;
+}
+.navigation-area ul li {
+}
+
+.navigation-area ul li .nav-link {
+  font-size: 18px;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.navigation-area ul li .nav-link:hover {
+  border-radius: 10px;
+}

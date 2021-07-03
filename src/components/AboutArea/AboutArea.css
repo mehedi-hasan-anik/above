@@ -1,0 +1,93 @@
+.about-section {
+  padding: 3em 0;
+}
+/* @media (min-width: 1200px)
+.container {
+    width: 1170px;
+}
+@media (min-width: 992px)
+.container {
+    width: 970px;
+}
+@media (min-width: 768px)
+.container {
+    width: 750px;
+} */
+.about-header {
+  text-align: center;
+}
+.about-header h3 {
+  font-size: 2.5em;
+  font-family: "Arvo", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #2a404e;
+}
+.about-imag {
+  float: left;
+  width: 27%;
+  margin-right: 5%;
+}
+.about-imag img {
+  border: 2px solid #ef664d;
+  border-radius: 103px;
+}
+
+.about-text {
+  float: left;
+  width: 65%;
+  margin-top: 3%;
+}
+.about-text p {
+  font-size: 15px;
+  color: #7e7e7e;
+  line-height: 1.5em;
+}
+p {
+  padding: 0 0;
+  margin: 0 0;
+}
+.about-sectiongrids {
+  padding: 40px 0px;
+}
+/* @media (min-width: 992px)
+.col-md-6 {
+    width: 50%;
+}
+
+@media (min-width: 992px)
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+} */
+.polls {
+  padding: 10px 0;
+}
+.poll-desc {
+  float: left;
+}
+.poll-desc h4 {
+  font-size: 17px;
+  color: #2a404e;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.percentage {
+  float: right;
+  margin-right: 26%;
+}
+.percentage p {
+  font-size: 17px;
+  color: #2a404e;
+  font-weight: bold;
+}
+.skills {
+  width: 100%;
+  margin: 5px 0;
+  height: 14px;
+  background: #dedede;
+}
+.skills > div {
+  height: 100%;
+  display: block;
+  background-color: #ef664d;
+}

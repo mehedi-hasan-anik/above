@@ -1,0 +1,40 @@
+.services-section {
+  padding: 3em 0;
+}
+.services-header {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+.services-header h3 {
+  font-size: 2.5em;
+  font-family: "Arvo", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #2a404e;
+}
+.services-header p {
+  line-height: 1.5em;
+  font-size: 15px;
+  color: #7e7e7e;
+  padding: 25px 0;
+}
+.services-sectiongrids {
+  text-align: center;
+}
+.services-grid h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 15px 0;
+  color: #2a404e;
+  text-transform: uppercase;
+}
+.services-grid p {
+  font-size: 15px;
+  color: #7e7e7e;
+  padding: 0 22px;
+}
+.arrow1 {
+  padding-top: 30px;
+  text-align: center;
+}

@@ -1,0 +1,57 @@
+.works-section {
+  padding: 3em 0;
+  background: #2e3e4e;
+}
+.works-header {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+.works-header h3 {
+  font-size: 2.5em;
+  font-family: "Arvo", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ef664d;
+}
+.works-header p {
+  line-height: 1.5em;
+  font-size: 15px;
+  color: #fefefe;
+  padding: 25px 0;
+}
+.resp-tabs-list {
+  text-align: right;
+  list-style: none;
+  margin: 18px 0;
+  padding-bottom: 5px;
+}
+.resp-tab-item {
+  padding: 7px 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 0 0.3em;
+  cursor: pointer;
+  display: inline-block;
+  list-style: none;
+  outline: none;
+  text-transform: uppercase;
+}
+.tm-paging-link {
+  color: white;
+  text-decoration: none;
+}
+.tm-paging-link:hover {
+  color: #ef664d;
+}
+.arrow {
+  padding-top: 15px;
+  text-align: center;
+}
+.photo-gallary {
+  background: url(../image/left.png);
+  padding: 20px 20px 0 20px;
+  background-size: 100% 100%;
+}
