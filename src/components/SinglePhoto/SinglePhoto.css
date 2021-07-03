@@ -1,0 +1,25 @@
+/* .zoom-icon {
+  position: absolute;
+  opacity: 1;
+  display: block;
+  left: 0;
+  top: 0px;
+  width: 290px;
+  height: 85%;
+  background: url(../image/zoom-icon.png) center center no-repeat;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.siglePhoto:hover .zoom-icon {
+  opacity: 1;
+  position: absolute;
+  opacity: 0;
+  display: block;
+  left: 0;
+  top: 0px;
+  width: 290px;
+  height: 85%;
+  background: url(../image/zoom-icon.png) center center no-repeat;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+} */

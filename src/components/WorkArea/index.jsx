@@ -75,7 +75,7 @@ function WorkArea() {
             </div>
 
             <div className="arrow">
-              <a href="/" className="scroll">
+              <a href="#services" className="scroll">
                 <img src={aroowIcon} alt="" />
               </a>
             </div>

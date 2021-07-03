@@ -44,7 +44,7 @@ function Services() {
 
             <div className="clearfix"></div>
             <div className="arrow1">
-              <a href="/" className="scroll">
+              <a href="#contact" className="scroll">
                 <img src={servicePhoto4} alt="" />
               </a>
             </div>

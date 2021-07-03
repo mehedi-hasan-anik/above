@@ -46,10 +46,10 @@
 .tm-paging-link:hover {
   color: #ef664d;
 }
-.arrow {
+/* .arrow {
   padding-top: 15px;
   text-align: center;
-}
+} */
 .photo-gallary {
   background: url(../image/left.png);
   padding: 20px 20px 0 20px;
