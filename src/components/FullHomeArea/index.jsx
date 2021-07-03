@@ -4,6 +4,7 @@ import "./FullHomeArea.css";
 import AboutArea from "../AboutArea";
 import WorkArea from "../WorkArea";
 import Services from "../Services";
+import ContactArea from "../ContactArea";
 
 function FullHomeArea() {
   return (
@@ -12,6 +13,7 @@ function FullHomeArea() {
       <AboutArea />
       <WorkArea />
       <Services />
+      <ContactArea />
     </div>
   );
 }

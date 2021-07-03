@@ -32,12 +32,12 @@ function Navigation() {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link ms-3" to="/home">
+                <Link className="nav-link ms-3" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link ms-3" to="/about">
+                <Link className="nav-link ms-3" to="#about">
                   About
                 </Link>
               </li>
