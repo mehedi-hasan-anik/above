@@ -1,11 +1,14 @@
 import React from "react";
 import "./SinglePhoto.css";
+import searchIcon from "../image/zoom-icon.png";
 
 function SinglePhoto({ photo }) {
   return (
-    <div className="col-md-3 mb-4 ">
+    <div className="col-md-3 mb-4 singlePhoto ">
+      <div className="zoom-icon">
+        <img src={searchIcon} alt="" />
+      </div>
       <img src={photo} alt="" className="img-fluid siglePhoto" />
-      <span className="zoom-icon"></span>
     </div>
   );
 }
