@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navigation.css";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from "../image/logo.png";
@@ -32,40 +31,31 @@ function Navigation() {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link ms-3" to="/">
+                <a href="/" className="nav-link ms-3">
                   Home
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link ms-3" to="#about">
+                <a href="#about" className="nav-link ms-3">
                   About
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link ms-3" to="/work">
+                <a href="#work" className="nav-link ms-3">
                   Work
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link ms-3" to="/services">
+                <a href="#services" className="nav-link ms-3">
+                  {" "}
                   Services
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link ms-3" to="/contact">
+                <a href="#contact" className="nav-link ms-3">
                   Contact
-                </Link>
+                </a>
               </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link ms-3" to="/admin">
-                  Admin
-                </Link>
-              </li> */}
-              {/* <li className="nav-item">
-                <Link className="nav-link ms-3" to="/login">
-                  Login
-                </Link>
-              </li> */}
             </ul>
           </div>
         </div>

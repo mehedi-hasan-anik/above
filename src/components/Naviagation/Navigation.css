@@ -22,7 +22,8 @@
 .navigation-area ul {
   padding: 20px 0px;
 }
-.navigation-area ul li {
+.navigation-area ul li a:hover {
+  color: tomato;
 }
 
 .navigation-area ul li .nav-link {
