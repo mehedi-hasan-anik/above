@@ -60,7 +60,7 @@
   padding: 10px 0;
 }
 .contactgrid1 textarea {
-  width: 100%;
+  /* width: 100%;
   background: none;
   outline: none;
   border: none;
@@ -69,6 +69,12 @@
   font-size: 15px;
   color: #d5d6d7;
   text-transform: capitalize;
+  padding: 10px 0;
+  height: 2.8em; */
+  width: 100%;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid#d5d6d7;
   padding: 10px 0;
   height: 2.8em;
 }
