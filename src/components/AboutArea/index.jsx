@@ -1,8 +1,8 @@
 import React from "react";
 import "./AboutArea.css";
-import aboutdata from "../../data/about-area.json";
 import arrowPhoto from "../image/arrow1.png";
 import AboutTextArea from "../AboutTextArea";
+import Skill from "../Skill";
 
 function AboutArea() {
   return (
@@ -24,25 +24,14 @@ function AboutArea() {
                 amet mauris."
           />
           <div className="about-sectiongrids row">
-            {aboutdata.map((item) => (
-              <div key={item.id} className="col-md-6 about-leftgrid">
-                <div key={item.id} className="polls">
-                  <div className="poll">
-                    <div className="poll-desc">
-                      <h4>{item.title}</h4>
-                    </div>
-                    <div className="percentage">
-                      <p>{item.percentage}</p>
-                    </div>
-                    <div className="clearfix"></div>
-                  </div>
-                  <div className="skills">
-                    <div style={{ width: "75%" }}> </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-
+            <Skill title="GRAPHIC DESIGN" percentage="75%" />
+            <Skill title="WEB DESIGN" percentage="75%" />
+            <Skill title="UI/UX" percentage="75%" />
+            <Skill title="BRANDING" percentage="75%" />
+            <Skill title="LOGODESIGN" percentage="75%" />
+            <Skill title="PHOTOGRAPHY" percentage="75%" />
+            <Skill title="HTML/CSS" percentage="75%" />
+            <Skill title="JQUERY" percentage="75%" />
             <div className="clearfix"></div>
           </div>
           <div className="arrow1">

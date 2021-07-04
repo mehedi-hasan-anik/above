@@ -77,6 +77,8 @@
   border-bottom: 1px solid#d5d6d7;
   padding: 10px 0;
   height: 2.8em;
+  outline: none;
+  color: #d5d6d7;
 }
 .contactgrid2 {
   padding: 2em 0 0 17em;
