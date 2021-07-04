@@ -1,25 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import "./WorkArea.css";
 import aroowIcon from "../image/arrow1.png";
-import workData from "../../data/work-area.json";
-import { NavLink } from "react-router-dom";
 import WorkHeader from "../WorkHeader";
-import { userContext } from "../../App";
 import PhotoGallary from "../PhotoGallary";
+import WorkLink from "../WorkLink";
 
 function WorkArea() {
-  // const [photoItems, setPhotoItems] = useState([]);
-  const [photoItems, setPhotoItems] = useContext(userContext);
-
-  useEffect(() => {
-    setPhotoItems(workData.slice(0, 8));
-  }, []);
-
-  const photoHandler = (event) => {
-    const photoName = event.target.textContent.toLowerCase();
-    const selectedFood = workData.filter((item) => item.name === photoName);
-    setPhotoItems(selectedFood);
-  };
   return (
     <div>
       <div className="works-section" id="work">
@@ -43,81 +29,11 @@ function WorkArea() {
               >
                 <nav className="resp-tabs-list">
                   <ul>
-                    <li
-                      className="resp-tab-item resp-tab-active"
-                      aria-controls="tab_item-0"
-                      role="tab"
-                    >
-                      <NavLink
-                        exact
-                        to="/"
-                        activeClassName="selected"
-                        onClick={photoHandler}
-                        className="tm-paging-link"
-                      >
-                        ALL
-                      </NavLink>
-                    </li>
-                    <li
-                      className="resp-tab-item resp-tab-active"
-                      aria-controls="tab_item-0"
-                      role="tab"
-                    >
-                      <NavLink
-                        exact
-                        to="/"
-                        activeClassName="selected"
-                        onClick={photoHandler}
-                        className="tm-paging-link"
-                      >
-                        BRANDING
-                      </NavLink>
-                    </li>
-                    <li
-                      className="resp-tab-item resp-tab-active"
-                      aria-controls="tab_item-0"
-                      role="tab"
-                    >
-                      <NavLink
-                        exact
-                        to="/"
-                        activeClassName="selected"
-                        onClick={photoHandler}
-                        className="tm-paging-link"
-                      >
-                        PRINT
-                      </NavLink>
-                    </li>
-                    <li
-                      className="resp-tab-item resp-tab-active"
-                      aria-controls="tab_item-0"
-                      role="tab"
-                    >
-                      <NavLink
-                        exact
-                        to="/"
-                        activeClassName="selected"
-                        onClick={photoHandler}
-                        className="tm-paging-link"
-                      >
-                        WEB DESIGN
-                      </NavLink>
-                    </li>
-                    <li
-                      className="resp-tab-item resp-tab-active"
-                      aria-controls="tab_item-0"
-                      role="tab"
-                    >
-                      <NavLink
-                        exact
-                        to="/"
-                        activeClassName="selected"
-                        onClick={photoHandler}
-                        className="tm-paging-link"
-                      >
-                        PHOTOGRAPHY
-                      </NavLink>
-                    </li>
+                    <WorkLink title="ALL" />
+                    <WorkLink title="BRANDING" />
+                    <WorkLink title="PRINT" />
+                    <WorkLink title="WEB DESIGN" />
+                    <WorkLink title="PHOTOGRAPHYL" />
                   </ul>
                 </nav>
                 <PhotoGallary />

@@ -1,10 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { userContext } from "../../App";
 import "./PhotoGallary.css";
 import SinglePhoto from "../SinglePhoto";
+import workData from "../../data/work-area.json";
 
 function PhotoGallary() {
   const [photoItems, setPhotoItems] = useContext(userContext);
+  useEffect(() => {
+    setPhotoItems(workData.slice(0, 8));
+  }, []);
+
   return (
     <div className="row photo-gallary">
       {photoItems &&
