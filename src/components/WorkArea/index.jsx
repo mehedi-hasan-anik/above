@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import "./WorkArea.css";
 import aroowIcon from "../image/arrow1.png";
 import workData from "../../data/work-area.json";
 import { NavLink } from "react-router-dom";
-import SinglePhoto from "../SinglePhoto";
 import WorkHeader from "../WorkHeader";
+import { userContext } from "../../App";
+import PhotoGallary from "../PhotoGallary";
 
 function WorkArea() {
-  const [photoItems, setPhotoItems] = useState([]);
+  // const [photoItems, setPhotoItems] = useState([]);
+  const [photoItems, setPhotoItems] = useContext(userContext);
 
   useEffect(() => {
     setPhotoItems(workData.slice(0, 8));
@@ -118,16 +120,7 @@ function WorkArea() {
                     </li>
                   </ul>
                 </nav>
-                <div className="row photo-gallary">
-                  {photoItems &&
-                    photoItems.map((item) => (
-                      <SinglePhoto
-                        key={item.id}
-                        name={item.title}
-                        photo={item.photo}
-                      />
-                    ))}
-                </div>
+                <PhotoGallary />
               </div>
             </div>
 

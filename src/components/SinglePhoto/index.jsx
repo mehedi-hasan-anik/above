@@ -4,7 +4,7 @@ import searchIcon from "../image/zoom-icon.png";
 
 function SinglePhoto({ photo }) {
   return (
-    <div className="col-md-3 mb-4 singlePhoto ">
+    <div className="col-md-3  singlePhoto ">
       <div className="zoom-icon">
         <img src={searchIcon} alt="" />
       </div>

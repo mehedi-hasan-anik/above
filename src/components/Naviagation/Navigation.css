@@ -2,6 +2,7 @@
 }
 .navbar {
   background: transparent;
+  /* z-index: 990; */
 }
 .nav-full-area {
 }

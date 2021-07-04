@@ -1,5 +1,5 @@
 import "./Slider.css";
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
@@ -15,7 +15,7 @@ SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
 
 function Slider() {
   return (
-    <>
+    <div div className="silder-area">
       <Swiper
         loop={true}
         cssMode={true}
@@ -53,7 +53,7 @@ function Slider() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 
