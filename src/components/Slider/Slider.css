@@ -1,9 +1,14 @@
-.carousel {
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  transform: translate(-50%, 50%);
 }
 
 .banner_center h1 {
@@ -31,4 +36,26 @@ h6 {
 .banner_center h2 span {
   color: #ef664d;
   font-weight: 900;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  /* position: absolute; */
+  bottom: -193px;
+  left: 0;
+  width: 100%;
+  position: relative;
+  display: none;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-feature-settings: ;
+  font-variant: initial;
+  line-height: 1;
+  color: white;
 }

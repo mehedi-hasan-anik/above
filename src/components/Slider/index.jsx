@@ -1,15 +1,31 @@
-import React from "react";
 import "./Slider.css";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
+import "swiper/components/navigation/navigation.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+  Autoplay,
+} from "swiper/core";
+SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
 
 function Slider() {
   return (
-    <div
-      id="carouselExampleControls"
-      className="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div className="carousel-inner">
-        <div className="carousel-item active">
+    <>
+      <Swiper
+        loop={true}
+        cssMode={true}
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>
           <div className="banner_center">
             <h1>hello world,</h1>
             <h2>
@@ -17,45 +33,27 @@ function Slider() {
             </h2>
             <h2>from morocco</h2>
           </div>
-        </div>
-        <div className="carousel-item">
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="banner_center">
-            <h1>Lorem Ipsum ,</h1>
+            <h1>hello world,</h1>
             <h2>
-              Contrary to <span>& designer</span>
+              i am <span>graphic & web designer</span>
             </h2>
-            <h2>reproduced below</h2>
+            <h2>from morocco</h2>
           </div>
-        </div>
-        <div className="carousel-item">
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="banner_center">
-            <h1>Content here,</h1>
+            <h1>hello world,</h1>
             <h2>
-              Lorem <span>graphic & designer</span>
+              i am <span>graphic & web designer</span>
             </h2>
-            <h2>Contrary</h2>
+            <h2>from morocco</h2>
           </div>
-        </div>
-      </div>
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
-    </div>
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 }
 

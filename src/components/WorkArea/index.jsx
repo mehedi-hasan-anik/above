@@ -4,7 +4,7 @@ import aroowIcon from "../image/arrow1.png";
 import workData from "../../data/work-area.json";
 import { NavLink } from "react-router-dom";
 import SinglePhoto from "../SinglePhoto";
-import workNavigation from "../../data/workNavigation.json";
+import WorkHeader from "../WorkHeader";
 
 function WorkArea() {
   const [photoItems, setPhotoItems] = useState([]);
@@ -22,15 +22,15 @@ function WorkArea() {
     <div>
       <div className="works-section" id="work">
         <div className="works-header">
-          <h3>works</h3>
-          <p>
-            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+          <WorkHeader
+            title="works"
+            details=" This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
             velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
             auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
             Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
             Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-            ornare odio.{" "}
-          </p>
+            ornare odio."
+          />
         </div>
         <div className="portfolio-section-bottom-row" id="portfolio">
           <div className="container">
@@ -41,24 +41,81 @@ function WorkArea() {
               >
                 <nav className="resp-tabs-list">
                   <ul>
-                    {workNavigation.map((item) => (
-                      <li
-                        key={item.id}
-                        className="resp-tab-item resp-tab-active"
-                        aria-controls="tab_item-0"
-                        role="tab"
+                    <li
+                      className="resp-tab-item resp-tab-active"
+                      aria-controls="tab_item-0"
+                      role="tab"
+                    >
+                      <NavLink
+                        exact
+                        to="/"
+                        activeClassName="selected"
+                        onClick={photoHandler}
+                        className="tm-paging-link"
                       >
-                        <NavLink
-                          exact
-                          to="/"
-                          activeClassName="selected"
-                          onClick={photoHandler}
-                          className="tm-paging-link"
-                        >
-                          {item.title}
-                        </NavLink>
-                      </li>
-                    ))}
+                        ALL
+                      </NavLink>
+                    </li>
+                    <li
+                      className="resp-tab-item resp-tab-active"
+                      aria-controls="tab_item-0"
+                      role="tab"
+                    >
+                      <NavLink
+                        exact
+                        to="/"
+                        activeClassName="selected"
+                        onClick={photoHandler}
+                        className="tm-paging-link"
+                      >
+                        BRANDING
+                      </NavLink>
+                    </li>
+                    <li
+                      className="resp-tab-item resp-tab-active"
+                      aria-controls="tab_item-0"
+                      role="tab"
+                    >
+                      <NavLink
+                        exact
+                        to="/"
+                        activeClassName="selected"
+                        onClick={photoHandler}
+                        className="tm-paging-link"
+                      >
+                        PRINT
+                      </NavLink>
+                    </li>
+                    <li
+                      className="resp-tab-item resp-tab-active"
+                      aria-controls="tab_item-0"
+                      role="tab"
+                    >
+                      <NavLink
+                        exact
+                        to="/"
+                        activeClassName="selected"
+                        onClick={photoHandler}
+                        className="tm-paging-link"
+                      >
+                        WEB DESIGN
+                      </NavLink>
+                    </li>
+                    <li
+                      className="resp-tab-item resp-tab-active"
+                      aria-controls="tab_item-0"
+                      role="tab"
+                    >
+                      <NavLink
+                        exact
+                        to="/"
+                        activeClassName="selected"
+                        onClick={photoHandler}
+                        className="tm-paging-link"
+                      >
+                        PHOTOGRAPHY
+                      </NavLink>
+                    </li>
                   </ul>
                 </nav>
                 <div className="row photo-gallary">
