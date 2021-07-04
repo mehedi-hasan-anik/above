@@ -33,7 +33,7 @@ function WorkArea() {
                     <WorkLink title="BRANDING" />
                     <WorkLink title="PRINT" />
                     <WorkLink title="WEB DESIGN" />
-                    <WorkLink title="PHOTOGRAPHYL" />
+                    <WorkLink title="PHOTOGRAPHY" />
                   </ul>
                 </nav>
                 <PhotoGallary />

@@ -9,6 +9,9 @@ function WorkLink({ title }) {
 
   const photoHandler = (event) => {
     const photoName = event.target.textContent.toLowerCase();
+    if (photoName === "all") {
+      return setPhotoItems(workData);
+    }
     const selectedFood = workData.filter((item) => item.name === photoName);
     setPhotoItems(selectedFood);
   };
